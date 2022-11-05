@@ -143,7 +143,8 @@ class App extends React.Component{
                 this.setState({ icon: this.weatherIcon.Thunderstorm});
                 break;
             case rangeId >= 300 && rangeId <= 321:
-                return this.weatherIcon.Drizzle
+                this.setState({ icon: this.weatherIcon.Drizzle});
+                break;
             case rangeId >= 500 && rangeId <= 531:
                 this.setState({ icon: this.weatherIcon.Rain });
                 break;
